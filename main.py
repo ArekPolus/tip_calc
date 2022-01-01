@@ -15,4 +15,5 @@ bill_with_tip = tip_number / 100 * bill + bill
 print(bill_with_tip)
 bill_person = bill_with_tip/people_number
 final_person_pay = round(bill_person, 2)
-print(f"Each person should pay {final_person_pay}")
+final_person_pay = "{:.2f}".format(bill_person)
+print(f"Each person should pay: ${final_person_pay}")
